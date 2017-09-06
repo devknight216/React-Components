@@ -92,10 +92,6 @@ To actually start seeing the components you have to run React Storybook.
 To do that you have to bootstrap the Lerna project first, simply follow:
 
 ```
-$ yarn install
-```
-
-```
 $ yarn bootstrap
 ```
 
