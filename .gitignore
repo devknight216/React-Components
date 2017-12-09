@@ -10,3 +10,4 @@ lib
 storybook-static
 .next
 .cache
+/docs/public

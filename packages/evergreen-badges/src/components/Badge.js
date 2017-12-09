@@ -5,9 +5,8 @@ import { FillAppearances } from 'evergreen-shared-styles'
 
 export default class Badge extends PureComponent {
   static propTypes = {
-    ...Strong.propTypes,
-    appearance: PropTypes.oneOf(Object.keys(FillAppearances.default))
-      .isRequired,
+    ...Text.propTypes,
+    appearance: PropTypes.oneOf(Object.keys(FillAppearances.default)).isRequired
   }
 
   static defaultProps = {
@@ -24,7 +23,7 @@ export default class Badge extends PureComponent {
     textDecoration: 'none',
     textTransform: 'uppercase',
     appearance: 'neutral',
-    isSolid: false,
+    isSolid: false
   }
 
   render() {
