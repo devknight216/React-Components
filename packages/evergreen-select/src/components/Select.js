@@ -1,12 +1,13 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Box from 'ui-box'
-import { Text } from 'evergreen-typography'
+import { Text, TextStyles } from 'evergreen-typography'
 import { TriangleIcon } from 'evergreen-icons'
+import colors from 'evergreen-colors'
 import {
   getIconSizeForControlHeight,
   getBorderRadiusForControlHeight,
-  getTextSizeForControlHeight
+  getTextSizeForControlHeight,
 } from 'evergreen-shared-styles'
 import SelectAppearances from '../styles/SelectAppearances'
 
@@ -21,7 +22,7 @@ export default class Select extends PureComponent {
     appearance: PropTypes.oneOf(Object.keys(SelectAppearances)),
     required: PropTypes.bool,
     autofocus: PropTypes.bool,
-    isInvalid: PropTypes.bool
+    isInvalid: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -30,7 +31,7 @@ export default class Select extends PureComponent {
     height: 32,
     display: 'inline-flex',
     flex: 1,
-    position: 'relative'
+    position: 'relative',
   }
 
   render() {
@@ -83,7 +84,7 @@ export default class Select extends PureComponent {
           color={disabled ? 'disabled' : 'default'}
           iconSize={iconSize}
           css={{
-            pointerEvents: 'none'
+            pointerEvents: 'none',
           }}
         />
       </Box>

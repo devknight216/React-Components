@@ -1,4 +1,1 @@
-import Textarea from './components/Textarea'
-
-export default Textarea
-export { Textarea }
+export { default as Textarea } from './components/Textarea'

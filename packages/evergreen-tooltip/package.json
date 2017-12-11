@@ -3,7 +3,13 @@
   "version": "2.19.0",
   "description": "React components: Tooltip",
   "main": "lib/index.js",
-  "keywords": ["evergreen", "segment", "ui", "react", "Tooltip"],
+  "keywords": [
+    "evergreen",
+    "segment",
+    "ui",
+    "react",
+    "Tooltip"
+  ],
   "author": "Segment",
   "license": "MIT",
   "dependencies": {
@@ -18,6 +24,5 @@
   },
   "devDependencies": {
     "evergreen-layers": "^2.19.0"
-  },
-  "xo": false
+  }
 }

@@ -3,7 +3,13 @@
   "version": "2.19.0",
   "description": "React components: Popover",
   "main": "lib/index.js",
-  "keywords": ["evergreen", "segment", "ui", "react", "Popover"],
+  "keywords": [
+    "evergreen",
+    "segment",
+    "ui",
+    "react",
+    "Popover"
+  ],
   "author": "Segment",
   "license": "MIT",
   "dependencies": {
@@ -18,6 +24,5 @@
   "devDependencies": {
     "evergreen-buttons": "^2.19.0",
     "evergreen-typography": "^2.19.0"
-  },
-  "xo": false
+  }
 }

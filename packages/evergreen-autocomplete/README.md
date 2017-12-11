@@ -18,7 +18,11 @@ This package implements a `Autocomplete` component. This component only deals wi
 ```jsx
 <Autocomplete onChange={handleChange} items={items}>
   {({ key, getInputProps, getRef }) => (
-    <TextInput key={key} innerRef={ref => getRef(ref)} {...getInputProps()} />
+    <TextInput
+      key={key}
+      innerRef={ref => getRef(ref)}
+      {...getInputProps()}
+    />
   )}
 </Autocomplete>
 ```
@@ -53,8 +57,8 @@ static defaultProps = {
 }
 ```
 
-## Complete Story
 
+## Complete Story
 ```jsx
 import { storiesOf } from '@storybook/react'
 import React from 'react'
@@ -67,7 +71,7 @@ import { Autocomplete } from '../src/'
 const items = [
   ...starWarsNames.all,
   ...starWarsNames.all.map(x => `${x} 2`),
-  ...starWarsNames.all.map(x => `${x} 3`)
+  ...starWarsNames.all.map(x => `${x} 3`),
 ].sort((a, b) => {
   const nameA = a.toUpperCase()
   const nameB = b.toUpperCase()
@@ -82,6 +86,7 @@ const items = [
 })
 
 const handleChange = selectedItem => {
+  // eslint-disable-next-line no-console
   console.log(selectedItem)
 }
 

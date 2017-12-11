@@ -3,7 +3,13 @@
   "version": "2.19.0",
   "description": "React components: SegmentedControl",
   "main": "lib/index.js",
-  "keywords": ["evergreen", "segment", "ui", "react", "SegmentedControl"],
+  "keywords": [
+    "evergreen",
+    "segment",
+    "ui",
+    "react",
+    "SegmentedControl"
+  ],
   "author": "Segment",
   "license": "MIT",
   "dependencies": {
@@ -18,6 +24,5 @@
   },
   "devDependencies": {
     "evergreen-layers": "^2.19.0"
-  },
-  "xo": false
+  }
 }

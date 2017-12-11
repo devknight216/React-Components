@@ -1,17 +1,7 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import Icon from './Icon'
 
 export default class SearchIcon extends PureComponent {
-  static propTypes = {
-    iconWidth: PropTypes.number,
-    iconHeight: PropTypes.number
-  }
-  static defaultProps = {
-    iconWidth: 16,
-    iconHeight: 16
-  }
-
   render() {
     const { iconWidth, iconHeight, ...props } = this.props
     return (
@@ -21,8 +11,8 @@ export default class SearchIcon extends PureComponent {
           y="0px"
           viewBox="0 0 16 16"
           xmlSpace="preserve"
-          width={iconWidth}
-          height={iconHeight}
+          width={iconWidth || 16}
+          height={iconHeight || 16}
           fill="currentColor"
         >
           <polygon points="13,11 8,5 3,11 " />

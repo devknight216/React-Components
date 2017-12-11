@@ -3,7 +3,13 @@
   "version": "2.19.0",
   "description": "React components: Image",
   "main": "lib/index.js",
-  "keywords": ["evergreen", "segment", "ui", "react", "Image"],
+  "keywords": [
+    "evergreen",
+    "segment",
+    "ui",
+    "react",
+    "Image"
+  ],
   "author": "Segment",
   "license": "MIT",
   "dependencies": {
@@ -16,6 +22,5 @@
   "devDependencies": {
     "evergreen-layers": "^2.19.0",
     "evergreen-typography": "^2.19.0"
-  },
-  "xo": false
+  }
 }

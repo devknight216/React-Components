@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import { Text } from 'evergreen-typography'
+import Box from 'ui-box'
 import { IconMap, IconAim } from 'evergreen-icons'
 import {
   getBorderRadiusForControlHeight,
   getTextStyleForControlHeight,
-  getIconSizeForControlHeight
+  getIconSizeForControlHeight,
 } from 'evergreen-shared-styles'
 import ButtonAppearances from '../styles/ButtonAppearances'
 
@@ -19,7 +20,7 @@ export default class Button extends PureComponent {
     iconBefore: PropTypes.oneOf(Object.keys(IconMap)),
     iconBeforeAim: PropTypes.oneOf(Object.keys(IconAim)),
     iconAfter: PropTypes.oneOf(Object.keys(IconMap)),
-    iconAfterAim: PropTypes.oneOf(Object.keys(IconAim))
+    iconAfterAim: PropTypes.oneOf(Object.keys(IconAim)),
   }
 
   static defaultProps = {
@@ -37,7 +38,7 @@ export default class Button extends PureComponent {
 
     isActive: false,
     iconBeforeAim: 'none',
-    iconAfterAim: 'none'
+    iconAfterAim: 'none',
   }
 
   render() {
@@ -48,13 +49,13 @@ export default class Button extends PureComponent {
       children,
       appearance,
 
-      // Paddings
+      // paddings
       paddingRight,
       paddingLeft,
       paddingTop,
       paddingBottom,
 
-      // Icons
+      // icons
       iconBefore: iconBeforeKey,
       iconBeforeAim,
       iconAfter: iconAfterKey,
@@ -68,8 +69,9 @@ export default class Button extends PureComponent {
     const iconHeight = height - 4
     const iconSize = getIconSizeForControlHeight({ height: iconHeight })
 
-    const pr = paddingRight ? paddingRight : Math.round(height / 2)
-    const pl = paddingLeft ? paddingLeft : Math.round(height / 2)
+    const pr =
+      paddingRight !== undefined ? paddingRight : Math.round(height / 2)
+    const pl = paddingLeft !== undefined ? paddingLeft : Math.round(height / 2)
 
     let iconBefore
     if (iconBeforeKey) {
@@ -78,7 +80,7 @@ export default class Button extends PureComponent {
         iconSize,
         color: 'inherit',
         size: iconHeight,
-        marginLeft: -Math.round(pl * 0.6)
+        marginLeft: -Math.round(pl * 0.6),
       })
     }
 
@@ -89,7 +91,7 @@ export default class Button extends PureComponent {
         iconSize,
         color: 'inherit',
         size: iconHeight,
-        marginRight: -Math.round(pl * 0.6)
+        marginRight: -Math.round(pl * 0.6),
       })
     }
 
@@ -106,7 +108,7 @@ export default class Button extends PureComponent {
         {...textStyle}
         css={{
           ...css,
-          ...appearanceStyle
+          ...appearanceStyle,
         }}
         height={height}
         lineHeight={`${height}px`}

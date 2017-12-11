@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react' // eslint-disable-line import/no-extraneous-dependencies
+import { storiesOf } from '@storybook/react'
 import React from 'react'
 import Box from 'ui-box'
 import { Pane } from 'evergreen-layers'
@@ -9,9 +9,9 @@ import {
   TableHeaderCell,
   TextTableHeaderCell,
   SearchTableHeaderCell,
-  TableBody
+  TableBody,
 } from '../src/'
-import profiles from './profiles'
+import profiles from './profiles.json'
 
 storiesOf('table', module)
   .add('Basic example', () => (
@@ -32,7 +32,7 @@ storiesOf('table', module)
         </TableRow>
         <TableBody height={640}>
           {profiles.map(profile => (
-            <TableRow key={profile.id} isSelectable>
+            <TableRow isSelectable>
               <TextTableCell>{profile.name}</TextTableCell>
               <TextTableCell>{profile.lastActivity}</TextTableCell>
               <TextTableCell isNumber borderRight={null}>

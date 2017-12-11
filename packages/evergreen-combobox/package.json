@@ -1,9 +1,15 @@
 {
   "name": "evergreen-combobox",
-  "version": "2.19.1",
+  "version": "2.19.2",
   "description": "React components: Combobox",
   "main": "lib/index.js",
-  "keywords": ["evergreen", "segment", "ui", "react", "Combobox"],
+  "keywords": [
+    "evergreen",
+    "segment",
+    "ui",
+    "react",
+    "Combobox"
+  ],
   "author": "Segment",
   "license": "MIT",
   "dependencies": {
@@ -21,6 +27,5 @@
     "evergreen-layers": "^2.19.0",
     "evergreen-typography": "^2.19.0",
     "starwars-names": "^1.6.0"
-  },
-  "xo": false
+  }
 }
