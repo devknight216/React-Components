@@ -181,22 +181,6 @@ The following file tree will be generated:
 └── index.js
 ```
 
-## 🎉 Contributors
-
-We will add you to the list if you make any meaningful contribution!
-
-- Jeroen Ransijn
-- Roland Warmerdam
-- Ben McMahon
-- Matt Shwery
-- Colin Lohner
-- Allen Kleiner
-- Chris Chuck
-- ... many other on the Segment team and open-source contributors
-
-This project is maintained by [Segment](https://segment.com/)
-
-Please take a look at the [contributing guide](.github/CONTRIBUTING.md) to better understand what to work on.
 
 ## 👏 Respect earns Respect
 
