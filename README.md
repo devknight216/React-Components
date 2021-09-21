@@ -16,10 +16,7 @@
 
 - **Enterprise-grade.** Evergreen features a UI design language for enterprise-grade web applications.
 
-## Documentation & Community
 
-- [Documentation](https://evergreen.segment.com/)
-- [GitHub Discussions](https://github.com/segmentio/evergreen/discussions)
 
 ## Evergreen v5 to v6 Migration guide
 
@@ -184,7 +181,7 @@ The following file tree will be generated:
 
 ## 👏 Respect earns Respect
 
-Please respect our [Code of Conduct](.github/CODE_OF_CONDUCT.md), in short:
+
 
 - Using welcoming and inclusive language
 - Being respectful of differing viewpoints and experiences
@@ -192,9 +189,4 @@ Please respect our [Code of Conduct](.github/CODE_OF_CONDUCT.md), in short:
 - Focusing on what is best for the community
 - Showing empathy towards other community members
 
-## License
 
-Evergreen is released under the MIT license.
-The BlueprintJS icons are licensed under a [custom Apache 2.0 license](https://github.com/palantir/blueprint/blob/develop/LICENSE).
-
-Copyright © 2021 Segment.io, Inc.
